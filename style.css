@@ -911,100 +911,68 @@ footer {
 
     .section-title {
         font-size: 2.5rem;
-        margin-bottom: 3rem;
-    }
-}
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+        .hero p {
+            font-size: 1rem;
+        }
 
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        background: var(--card-bg);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        transition: 0.4s ease-in-out;
-        z-index: 1000;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
-    }
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
 
-    .nav-links.active {
-        right: 0;
-    }
+        .contact-wrapper {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
 
-    .hero h1 {
-        font-size: 3rem;
-    }
+        .input-group {
+            grid-template-columns: 1fr;
+        }
 
-    .hero p {
-        font-size: 1rem;
+        .about-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .terminal-window {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .gopher-mascot {
+            display: none;
+        }
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
+    @media (max-width: 480px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
 
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-        gap: 4rem;
-    }
+        .hero-btns .btns-group {
+            flex-direction: column;
+            width: 100%;
+        }
 
-    .input-group {
-        grid-template-columns: 1fr;
-    }
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
+        .btn-with-gopher {
+            width: 100%;
+        }
 
-    .terminal-window {
-        width: 100%;
-        max-width: 500px;
-    }
+        .gopher-interactive {
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-    .gopher-mascot {
-        display: none;
-    }
-}
+        .section-title {
+            font-size: 2rem;
+        }
 
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2.5rem;
+        .dashboard-card {
+            padding: 2rem;
+        }
     }
-
-    .hero-btns .btns-group {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .btn-with-gopher {
-        width: 100%;
-    }
-
-    .gopher-interactive {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .dashboard-card {
-        padding: 2rem;
-    }
-}
